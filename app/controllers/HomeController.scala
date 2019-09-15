@@ -20,4 +20,8 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     Ok(views.html.index("Your new application is ready."))
   }
 
+  def dhyanPage: Action[AnyContent] = Action {
+    Ok(views.html.dhyanPage())
+  }
+
 }
